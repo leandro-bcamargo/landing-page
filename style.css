@@ -1,7 +1,11 @@
+/* * {
+  border: 2px solid red;
+} */
+
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -91,17 +95,59 @@ a {
 }
 
 .quote {
+  display: flex;
+  flex-direction: column;
   background: #e5e7eb;
+  color: #f9faf8;
+  margin: 0 -100vw;
+  padding: 50px 100vw;
 }
 
 .quote > h3 {
   font-size: 36px;
   font-style: italic;
+  font-weight: 500;
   color: #1f2937;
+  text-align: justify;
+}
+
+.quote > p {
+  color: #1F2937;
+  font-weight: 900;
+  align-self: flex-end;
+  font-size: 20px;
 }
 
 .links {
   display: flex;
   gap: 20px;
 }
+
+.random-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  gap: 50px;
+}
+
+.card {
+  border: 5px #3882f6 solid;
+  flex-basis: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+}
+
+
 
